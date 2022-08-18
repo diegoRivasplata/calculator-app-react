@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import styles from './Toggle.module.css';
 
-const Toggle = () => {
+const Toggle = (props) => {
   const [toggleValue, setToggleValue] = useState(1);
 
   const toggleHandler = () => {
@@ -13,6 +13,10 @@ const Toggle = () => {
     setToggleValue((prevState) => prevState + 1);
   };
 
+  useEffect(()=>{
+    props.onChangeToggle(toggleValue);
+  },[props, toggleValue])
+
   return (
     <div>
       <div className={styles.values}>
@@ -21,16 +25,16 @@ const Toggle = () => {
         <div>3</div>
       </div>
       <div
-        className={styles['toggle-background']}
+        className={`${styles['toggle-background']} ${styles[props.className]}`}
         onClick={toggleHandler}
       >
-        <div className={styles['toggle']} style={{
-          transform:
+        <div className={`${styles['toggle']} ${styles[props.className]}`} style={{
+          left:
             toggleValue === 1
-              ? 'translateX(0px)'
+              ? '8%'
               : toggleValue === 2
-              ? 'translateX(14px)'
-              : 'translateX(30px)',
+              ? '37%'
+              : '65%',
         }}></div>
       </div>
     </div>

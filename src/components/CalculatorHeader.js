@@ -3,15 +3,18 @@ import Toggle from './UI/Toggle';
 
 import styles from './CalculatorHeader.module.css'
 
-const CalculatorHeader = () => {
+const CalculatorHeader = (props) => {
+  const changeToggleHandler = (toggleValue) => {
+    props.onToggleChange(toggleValue);
+  }
   return (
-    <div className={styles.header}>
+    <section className={`${styles.header} ${styles[props.className]}`}>
       <h2>calc</h2>
       <div className={styles['theme-toggle']}>
         <h3>THEME</h3>
-        <Toggle/>
+        <Toggle className={props.className} onChangeToggle={changeToggleHandler}/>
       </div>
-    </div>
+    </section>
   )
 }
 

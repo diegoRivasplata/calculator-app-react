@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
    -khtml-user-select: none; /* Konqueror HTML */
@@ -9,9 +11,44 @@
       -ms-user-select: none; /* Internet Explorer/Edge */
           user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome, Edge, Opera and Firefox */
+  --theme-1-primary-bg-color: hsl(222, 26%, 31%);
+  --theme-1-secondary-bg-color: hsl(223, 31%, 20%);
+  --theme-1-tertiary-bg-color: hsl(224, 36%, 15%);
+  --theme-1-primary-key-bg-color: hsl(30, 25%, 89%);
+  --theme-1-priamey-key-shadow-color: hsl(28, 16%, 65%);
+  --theme-1-secondary-key-bg-color: hsl(225, 21%, 49%);
+  --theme-1-secondary-key-shadow-color: hsl(224, 28%, 35%);
+  --theme-1-tertiary-key-bg-color: hsl(6, 63%, 50%);
+  --theme-1-tertiary-key-shadow-color: hsl(6, 70%, 34%);
+  --theme-1-primary-text-color: hsl(221, 14%, 31%);
+  --theme-1-secondary-text-color: hsl(0, 0%, 100%);
+
+  --theme-2-primary-bg-color: hsl(0, 0%, 90%);
+  --theme-2-secondary-bg-color: hsl(0, 5%, 81%);
+  --theme-2-tertiary-bg-color: hsl(0, 0%, 93%);
+  --theme-2-primary-key-bg-color: hsl(45, 7%, 89%);
+  --theme-2-priamey-key-shadow-color: hsl(35, 11%, 61%);
+  --theme-2-secondary-key-bg-color: hsl(185, 42%, 37%);
+  --theme-2-secondary-key-shadow-color: hsl(185, 58%, 25%);
+  --theme-2-tertiary-key-bg-color: hsl(25, 98%, 40%);
+  --theme-2-tertiary-key-shadow-color: hsl(25, 99%, 27%);
+  --theme-2-primary-text-color: hsl(60, 10%, 19%);
+  --theme-2-secondary-text-color: hsl(0, 0%, 100%);
+
+  --theme-3-primary-bg-color: hsl(268, 75%, 9%);
+  --theme-3-secondary-bg-color: hsl(268, 71%, 12%);
+  --theme-3-primary-key-bg-color: hsl(268, 47%, 21%);
+  --theme-3-priamey-key-shadow-color: hsl(290, 70%, 36%);
+  --theme-3-secondary-key-bg-color: hsl(281, 89%, 26%);
+  --theme-3-secondary-key-shadow-color: hsl(285, 91%, 52%);
+  --theme-3-tertiary-key-bg-color: hsl(176, 100%, 44%);
+  --theme-3-tertiary-key-shadow-color: hsl(177, 92%, 70%);
+  --theme-3-primary-text-color: hsl(52, 100%, 62%);
+  --theme-3-secondary-text-color: hsl(198, 20%, 13%);
+  --theme-3-tertiary-text-color: hsl(0, 0%, 100%);
 }
+
 body {
-  font-family: 'League Spartan', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

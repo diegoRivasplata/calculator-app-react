@@ -9,21 +9,54 @@
 .toggle-background{
   width: 50px;
   height: 18px;
-  background: hsl(223, 31%, 20%);
   border-radius: 25px;
   display: flex;
   align-items: center;
   padding: 4px;
   cursor: pointer;
   position: relative;
+  transition: all 1s ease;
+}
+.toggle-background.theme-1{
+  background: hsl(223, 31%, 20%);
+}
+
+.toggle-background.theme-2{
+  background: hsl(0, 5%, 81%);
+}
+
+.toggle-background.theme-3{
+  background: hsl(268, 71%, 12%);
 }
 
 .toggle{
   width: 12px;
   height: 12px;
-  background: hsl(6, 63%, 50%);
   border-radius: 100%;
   position: absolute;
-
   transition: all 1s ease;
+}
+
+.toggle.theme-1{
+  background: hsl(6, 63%, 50%);
+}
+.toggle.theme-2{
+  background: hsl(25, 98%, 40%);
+}
+.toggle.theme-3{
+  background: hsl(176, 100%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  .toggle-background{
+    width: 70px;
+    height: 26px;
+  }
+  .toggle{
+    width: 18px;
+    height: 18px;
+  }
+  .values{
+    font-size: 0.8rem;
+  }
 }
